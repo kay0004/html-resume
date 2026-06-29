@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  
+</head>
+<body>
+
+  <h1>Register</h1>
+
+  <form id="register-form">
+
+    <!-- Personal Details -->
+    <fieldset>
+      <legend>Personal details</legend>
+
+      <div class="field">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First name only" />
+      </div>
+      <br>
+      <div class="field">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last name only" />
+      </div>
+      <br>
+      <div class="field">
+        <label for="dob">Date of Birth</label>
+        <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="url">URL</label>
+        <input type="url" id="url" name="url" placeholder="http://mysite.com" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="tel">Telephone</label>
+        <input type="tel" id="tel" name="tel" placeholder="Eg. +447000 000000" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="shoesize">Shoesize</label>
+        <input type="number" id="shoesize" name="shoesize" placeholder="9" min="1" max="20" style="max-width:80px;" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="skill">Flying Skill level (1 low - 100 high)</label>
+        <div class="range-wrap">
+          <input type="range" id="skill" name="skill" min="1" max="100" value="0"
+            oninput="document.getElementById('skill-val').textContent = this.value" />
+          <span id="skill-val">0</span>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Billing Address -->
+    <fieldset>
+      <legend>Billing address</legend>
+
+      <div class="field">
+        <label for="address">Address</label>
+        <textarea id="address" name="address"></textarea>
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="postcode">Post code</label>
+        <input type="text" id="postcode" name="postcode" style="max-width:160px;" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" style="max-width:180px;" />
+      </div>
+    </fieldset>
+
+    <!-- Card Details -->
+    <fieldset>
+      <legend>Card details</legend>
+
+      <fieldset style="border:1px solid var(--border); padding:10px 14px; margin-bottom:16px; max-width:400px;">
+        <legend style="font-size:0.82rem;">Card type</legend>
+        <div class="radio-group">
+          <label><input type="radio" name="cardtype" value="visa" /> VISA</label>
+          <label><input type="radio" name="cardtype" value="mastercard" /> Mastercard</label>
+          <label><input type="radio" name="cardtype" value="amex" /> AMEX</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="cardname">Name</label>
+        <input type="text" id="cardname" name="cardname" placeholder="Name as it appears on your card" style="max-width:240px;" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="cardnum">Card number</label>
+        <input type="text" id="cardnum" name="cardnum" maxlength="19" style="max-width:180px;" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="cvv">Security code</label>
+        <input type="password" id="cvv" name="cvv" maxlength="4" style="max-width:100px;" />
+      </div>
+      <br>
+
+      <div class="field">
+        <label for="expiry">Expiry Date</label>
+        <input type="text" id="expiry" name="expiry" placeholder="--------- ----" style="max-width:180px;" />
+      </div>
+    </fieldset>
+    <br>
+
+    <!-- Submit -->
+    <div class="order-section">
+      <button type="submit">Place Order</button>
+    </div>
+
+  </form>
+
+  <a href="assignment2a.html">Go to Assignment 2a</a> |
+  <a href="assignment2b.html">Go to Assignment 2b</a> |
+
+</body>
+</html>
